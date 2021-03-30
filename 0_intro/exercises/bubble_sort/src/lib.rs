@@ -2,9 +2,7 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
     for i in 0..v.len() {
         for j in 0..(v.len() - i - 1) {
             if v[j] > v[j + 1] {
-                let tmp = v[j];
-                v[j] = v[j + 1];
-                v[j + 1] = tmp;
+                v.swap(j, j+1);
             }
         }
     }

@@ -1,7 +1,6 @@
 pub fn factorial(n: i32) -> i32 {
     match n {
-        0 => 1,
-        1 => 1,
+        0 | 1 => 1,
         x => x * factorial(x - 1),
     }
 }

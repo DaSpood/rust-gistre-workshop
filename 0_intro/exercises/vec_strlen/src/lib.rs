@@ -1,6 +1,6 @@
 pub fn vec_strlen(vec: Vec<&str>) -> Vec<usize> {
     vec.iter()
-       .map(|elt| { elt.len() })
+       .map(|elt| elt.len())
        .collect()
 }
 

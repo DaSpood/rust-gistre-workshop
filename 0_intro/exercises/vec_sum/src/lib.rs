@@ -1,5 +1,5 @@
 pub fn vec_sum(vec: Vec<i32>) -> i32 {
-    vec.iter().fold(0, |acc, elt| { acc + elt }) // or .sum()
+    vec.iter().fold(0, |acc, elt| acc + elt) // or .sum()
 }
 
 #[cfg(test)]
