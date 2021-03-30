@@ -1,5 +1,8 @@
 pub fn factorial(n: i32) -> i32 {
-    todo!()
+    match n {
+        0 | 1 => 1,
+        x => x * factorial(x - 1),
+    }
 }
 
 #[cfg(test)]

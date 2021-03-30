@@ -1,5 +1,20 @@
 pub fn fibo(v: u32) -> u32 {
-    todo!()
+    match v {
+        0 => 0,
+        1 => 1,
+        x => {
+            let mut n1 = 0;
+            let mut n2 = 1;
+
+            for _ in 1..x {
+                let tmp = n2;
+                n2 += n1;
+                n1 = tmp;
+            }
+
+            n2
+        }
+    }
 }
 
 #[cfg(test)]
